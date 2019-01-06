@@ -15,7 +15,7 @@ sub new {
 
 sub _mapped_index {
     my ($self, $string) = @_;
-    my $digest = Digest::MurmurHash::murmur_hash($string);
+    my $digest = Digest::MurmurHash::murmur_hash($string); # think: cryptographic unsafe. it's ok?
     return $digest % $self->{m};
 }
 
