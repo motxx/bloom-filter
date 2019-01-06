@@ -1,7 +1,6 @@
 package Hash::BloomFilter;
 
 use Digest::MurmurHash;
-use Devel::Peek;
 use Carp qw(croak);
 
 sub new {
